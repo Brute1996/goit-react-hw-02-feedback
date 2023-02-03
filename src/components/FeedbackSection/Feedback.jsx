@@ -14,6 +14,11 @@ export class Feedback extends Component {
         positivePercentage: '',
     };
 
+    feedbackName = {
+        good: "good",
+        neutral: "neutral",
+        bad: "bad",
+    };
 
     addFeedback = (e) => {
         const feedbackName = e.target.dataset.feedbackName;
@@ -42,12 +47,6 @@ export class Feedback extends Component {
                 positivePercentage: Math.floor((good / total) * 100) + "%"
             };
         });
-    };
-
-    feedbackName = {
-        good: "good",
-        neutral: "neutral",
-        bad: "bad",
     };
 
     render() {
