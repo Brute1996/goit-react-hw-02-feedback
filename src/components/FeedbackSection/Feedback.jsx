@@ -3,6 +3,7 @@ import { Statistics } from "./Statistics/Statistics";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Section } from "./common/Section";
 import { Notification } from "./common/Notification";
+import { FeedbackWrapper } from "./FeedbackWrapper.styled";
 
 export class Feedback extends Component {
 
@@ -51,7 +52,7 @@ export class Feedback extends Component {
 
     render() {
         return (
-            <div>
+            <FeedbackWrapper>
                 <Section title="Please leave feedback">
                     <FeedbackOptions
                         options={this.feedbackName}
@@ -73,7 +74,7 @@ export class Feedback extends Component {
                         </Statistics>
                     }
                 </Section>
-            </div>
+            </FeedbackWrapper>
         );
     };
 };
