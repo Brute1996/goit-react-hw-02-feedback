@@ -10,5 +10,11 @@ margin: 20px 0;
     padding: 8px;
     border-radius: 10px;
     border: 1px solid grey;
+
+    &:hover,
+    &:focus{
+        background-color: #a4c2f4;
+        box-shadow: 1px 1px 1px black;
+    }
 }
 `
